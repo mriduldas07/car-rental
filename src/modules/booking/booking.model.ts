@@ -19,10 +19,12 @@ const bookingSchema = new Schema<IBooking>(
     user: {
       type: Schema.Types.ObjectId,
       ref: "User",
+      required: true,
     },
     car: {
       type: Schema.Types.ObjectId,
       ref: "Car",
+      required: true,
     },
     totalCost: {
       type: Number,

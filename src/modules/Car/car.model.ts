@@ -20,6 +20,7 @@ const carSchema = new Schema<ICar>(
       required: true,
     },
     status: {
+      type: String,
       enum: ["available", "not-availavle"],
       required: true,
     },
